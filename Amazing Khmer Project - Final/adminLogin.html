@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Login</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+            rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette|Kalam|Permanent+Marker&display=swap" rel="stylesheet"> 
+
+    </head>
+
+    <style>
+        .bgc {
+            background-color: #3E4551;
+        }
+
+        .login,
+        .image {
+            min-height: 100vh;
+        }
+
+        .bg-image {
+            background-image: url('https://www.timetravelturtle.com/wp-content/uploads/2013/03/Cambodia-2013-527_new.jpg');
+            background-size: cover;
+            background-position: center center;
+        }
+
+        p,
+        .footerText {
+            font-size: 20px;
+            font-family: 'Kalam', cursive;
+        }
+
+        .btnText {
+            font-family: 'Kalam', cursive;
+        }
+
+        .textSize {
+            font-size: 20px;
+            font-family: 'Permanent Marker', cursive;
+        }
+
+        .headingText {
+            font-family: 'Permanent Marker', cursive;
+        }
+
+        .logoText {
+            font-family: 'Courgette', cursive;
+        }
+    </style>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <!-- The image half -->
+                <div class="col-md-6 d-none d-md-flex bg-image">
+                </div>
+
+                <!-- The content half -->
+                <div class="col-md-6 bg-light">
+                    <div class="login d-flex align-items-center py-5">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 col-xl-7 mx-auto">
+                                    <h3 class="display-4 font-weight-bold headingText">Welcome Admin!</h3>
+                                    <p class="text-muted mb-4">Please input your username and password.</p>
+
+                                    <div class="form-group mb-3 btnText">
+                                        <input id="username" type="text" placeholder="Username" required="" autofocus=""
+                                            class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    </div>
+                                    <div class="form-group mb-3 btnText">
+                                        <input id="password" type="password" placeholder="Password" required=""
+                                            class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                    </div>
+                                    <div>
+                                        <h6 id="message"></h6>
+                                    </div>
+                                    <button id="btnLogin" type="submit"
+                                        class="btn btn-block text-uppercase mb-2 rounded-pill shadow-sm bgc white-text btnText">Log
+                                        In
+                                    </button>
+                                    <div class="text-center">
+                                        <a href="index.html" class="black-text btnText">Go to <i class="fas fa-home"></i></a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div><!-- End -->
+
+                    </div>
+                </div><!-- End -->
+
+            </div>
+        </div>
+
+        <script>
+            var _username = document.getElementById('username');
+            var _password = document.getElementById('password');
+            var _button = document.getElementById('btnLogin');
+            var _message = document.getElementById('message');
+            var _error;
+
+            function validation() {
+                try {
+                    if (_username.value.toLowerCase() !== "admin" && _password.value !== "admin") {
+                        _error = true;
+                        throw "Wrong username and password!";
+
+                    }
+
+                    if (_username.value.toLowerCase() !== "admin") {
+                        _error = true;
+                        throw "Wrong username";
+
+                    }
+                    if (_password.value !== "admin") {
+                        _error = true;
+                        throw "Wrong password";
+
+                    } else {
+                        _error = false;
+                        throw "Correct!";
+
+                    }
+
+                } catch (error) {
+                    if (_error == true) {
+                        //_result.innerHTML = `Name : ${_username.value}<br> Passwor: ${_password.value} `;
+                        _message.innerHTML = error;
+                        _message.style.color = 'red';
+
+                    } else {
+                        //_result.innerHTML = `Name : ${_username.value}<br> Passwor: ${_password.value} `;
+                        _message.innerHTML = error;
+                        _message.style.color = 'yellowgreen';
+                        window.location.href = "indexMyLTE.html";
+                    }
+                }
+            }
+
+            _button.onclick = function () {
+                validation();
+
+                console.log(typeof (_username.value));
+            }
+        </script>
+
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+        </script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js">
+        </script>
+    </body>
+
+</html>
