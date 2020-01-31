@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Angkor Wat</title>
-       <!-- icon for page title -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Angkor Wat</title>
+    <!-- icon for page title -->
     <link rel="icon" href="https://image.flaticon.com/icons/svg/444/444689.svg">
     <!-- Sweet Alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
@@ -28,38 +28,38 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/scrollToTop.css">
     <link rel="stylesheet" href="css/customCSS.css">
-    <link href="https://fonts.googleapis.com/css?family=Courgette|Kalam|Permanent+Marker&display=swap" rel="stylesheet"> 
-        <style>
-            html,
-            body,
-            header,
-            .carousel {
-                height: 90%;
-            }
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Kalam|Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+      html,
+      body,
+      header,
+      .carousel {
+        height: 90%;
+      }
 
-            .map-container {
-                overflow: hidden;
-                padding-bottom: 56.25%;
-                position: relative;
-                height: 0;
-            }
+      .map-container {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+      }
 
-            .map-container iframe {
-                left: 0;
-                top: 0;
-                height: 100%;
-                width: 100%;
-                position: absolute;
-            }
-        </style>
-
-
-    </head>
+      .map-container iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+    </style>
 
 
-    <body>
+  </head>
 
-        <!-- Navbar -->
+
+  <body>
+
+    <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
       <div class="container">
 
@@ -80,7 +80,7 @@
           <!-- Left -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link textSize" href="#">Home</a>
+              <a class="nav-link textSize" href="index.html">Home</a>
               <span class="sr-only">(current)</span>
             </li>
             <li class="nav-item">
@@ -100,7 +100,8 @@
             <li class="nav-item">
 
               <button onclick="window.location.href ='adminLogin.html';" type="button"
-                class="btn nav-link waves-effect border border-light rounded headingText"><i class="fas fa-user-edit mr-2"></i>Login in
+                class="btn nav-link waves-effect border border-light rounded headingText"><i
+                  class="fas fa-user-edit mr-2"></i>Login in
                 as Admin</button>
 
             </li>
@@ -120,7 +121,8 @@
         <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-1z" data-slide-to="1"></li>
         <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-        
+        <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+
 
       </ol>
       <!--/.Indicators-->
@@ -132,8 +134,6 @@
         <div class="carousel-item active">
           <div class="view"
             style="background-image: url('img/angkorwat/angkorwat1.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-
           </div>
         </div>
         <!--/First slide-->
@@ -143,7 +143,6 @@
           <div class="view"
             style="background-image: url('https://i1.wp.com/backpackingpeople.com/wp-content/uploads/2018/12/IMG_0063-23.jpg?resize=1038%2C576'); background-repeat: no-repeat; background-size: cover;">
 
-
           </div>
         </div>
         <!--/Second slide-->
@@ -152,80 +151,97 @@
         <div class="carousel-item">
           <div class="view"
             style="background-image: url('http://www.angkortravelguide.com/userfiles/angkor-wat-top-view.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-
           </div>
         </div>
         <!--/Third slide-->
-      </div>
-      <!--/.Slides-->
+      
 
-      <!--Controls-->
-      <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-      <!--/.Controls-->
+      <!--Fourth slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image:
+            url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Angkor_%28I%29.jpg/1200px-Angkor_%28I%29.jpg');
+            background-repeat: no-repeat; background-size: cover;">
+        </div>
+      </div>
+      <!--/Fourth slide-->
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
 
     </div>
     <!--/.Carousel Wrapper-->
 
-        <!--Main layout-->
-        <main>
-            <div class="container">
+    <!--Main layout-->
+    <main>
+      <div class="container">
 
-                <!-- News jumbotron -->
-                <div class="jumbotron text-center hoverable my-3 mb-4 p-4">
+        <!-- News jumbotron -->
+        <div class="jumbotron text-center hoverable my-3 mb-4 p-4">
 
-                    <!-- Grid row -->
-                    <div class="row">
+          <!-- Grid row -->
+          <div class="row">
 
-                        <!-- Grid column -->
-                        <div class="col-md-4 offset-md-1 mx-3 my-3">
-                            <!-- Featured image -->
-                            <div class="view overlay">
-                                <img src="http://www.vhappytravel.com/userfiles/angkorwat-att-b.jpg" class="img-fluid align-items-center" alt="Siem Reap Province">
-                                <a>
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
+            <!-- Grid column -->
+            <div class="col-md-4 offset-md-1 mx-3 my-3">
+              <!-- Featured image -->
+              <div class="view overlay">
+                <img src="http://www.vhappytravel.com/userfiles/angkorwat-att-b.jpg"
+                  class="img-fluid align-items-center" alt="Siem Reap Province">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-                        </div>
-                        <!-- Grid column -->
+            </div>
+            <!-- Grid column -->
 
-                        <!-- Grid column -->
-                        <div class="col-md-7 text-md-left ml-3 mt-3">
+            <!-- Grid column -->
+            <div class="col-md-7 text-md-left ml-3 mt-3">
 
-                            <h4 class="h3 font-weight-bold mb-4">Angkor Wat</h4>
+              <h4 class="h3 font-weight-bold mb-4">Angkor Wat</h4>
 
-                            <p class="font-weight-normal mb-3">Angkor Wat is a Hindu temple complex in Cambodia and is the largest religious monument in the world, on a site measuring 162.6 hectares. Originally constructed as a Hindu temple dedicated to the god Vishnu for the Khmer Empire, it was gradually transformed into a Buddhist temple towards the end of the 12th century.</p>
-                            <p class="font-weight-normal mb-3"><i class="fas fa-stopwatch"></i> Opening Hours: 08:00 - 17:30</p>
-                            <p class="font-weight-normal mb-3"><i class="far fa-calendar-alt"></i> Open Days: Everyday</p>
-                            <p class="font-weight-normal mb-3"><i class="fas fa-eye"></i> Visit Duration: 2 hrs</p>
-                        </div>
-                        
-                        <!-- Grid column -->
-                    </div>
-                    <!-- Grid row -->
-
-                </div>
-                <!-- News jumbotron -->
-                <!--Google map-->
-                <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3880.9977007254615!2d103.86479701471423!3d13.412469290567756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3110168aea9a272d%3A0x3eaba81157b0418d!2sAngkor%20Wat!5e0!3m2!1sen!2skh!4v1579963023383!5m2!1sen!2skh" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                </div>
-
-                <!--Google Maps-->
+              <p class="font-weight-normal mb-3">Angkor Wat is a Hindu temple complex in Cambodia and is the largest
+                religious monument in the world, on a site measuring 162.6 hectares. Originally constructed as a Hindu
+                temple dedicated to the god Vishnu for the Khmer Empire, it was gradually transformed into a Buddhist
+                temple towards the end of the 12th century.</p>
+              <p class="font-weight-normal mb-3"><i class="fas fa-stopwatch"></i> Opening Hours: 08:00 - 17:30</p>
+              <p class="font-weight-normal mb-3"><i class="far fa-calendar-alt"></i> Open Days: Everyday</p>
+              <p class="font-weight-normal mb-3"><i class="fas fa-eye"></i> Visit Duration: 2 hrs</p>
             </div>
 
-        </main>
-        <!--Main layout-->
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
 
-        <!--Footer-->
+        </div>
+        <!-- News jumbotron -->
+        <!--Google map-->
+        <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3880.9977007254615!2d103.86479701471423!3d13.412469290567756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3110168aea9a272d%3A0x3eaba81157b0418d!2sAngkor%20Wat!5e0!3m2!1sen!2skh!4v1579963023383!5m2!1sen!2skh"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <!--Google Maps-->
+        <button id="btn">
+          <i class="fas fa-chevron-up" style="font-size: 15px;"></i>
+        </button>
+
+      </div>
+
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
     <footer class="page-footer text-center font-small mt-4 wow fadeIn p-3 btnText">
 
       <div class="row text-left footerText">
@@ -263,21 +279,22 @@
     </footer>
     <!--/.Footer-->
 
-        <!-- SCRIPTS -->
-        <!-- JQuery -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!-- Bootstrap tooltips -->
-        <script type="text/javascript" src="js/popper.min.js"></script>
-        <!-- Bootstrap core JavaScript -->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <!-- MDB core JavaScript -->
-        <script type="text/javascript" src="js/mdb.min.js"></script>
-        <!-- Initializations -->
-        <script type="text/javascript">
-            // Animations initialization
-            new WOW().init();
-        </script>
-        <script src="js/carousel-1-item.js"></script>
-    </body>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+      // Animations initialization
+      new WOW().init();
+    </script>
+    <script src="js/carousel-1-item.js"></script>
+    <script src="js/scrollToTop.js"></script>
+  </body>
 
 </html>

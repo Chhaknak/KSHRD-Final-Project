@@ -1,5 +1,14 @@
-#btn {
+#btn:hover {
     background-color: grey;
+    color: white;
+    opacity: 1;
+    filter: "alpha(opacity=100)";
+    -ms-filter: "alpha(opacity=100)";
+}
+
+
+#btn {
+    background-color: black;
     color: white;
     width: 40px;
     height: 40px;
